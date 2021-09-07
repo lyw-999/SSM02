@@ -1,0 +1,31 @@
+1. springMVC框架主要用来做什么?
+1.0用来查找jsp/html等界面的
+1.1用来接收前端的参数
+1.2用来响应前端的数据，把数据变为json发给前端或者携带数据进行跳转
+
+2. springMVC框架的目的:
+ 就是让写代码更加方便。
+
+3. springMVC 包含哪些学习内容!
+
+3.1  单体应用中:  要学的有: 如何查找jsp  如何携带数据跳转到前端 前端jsp 的jstl/el表达式的使用使用以及9大作用域
+3.2  前后端分离中:要学的有: 如何 给后台返回json数据，如何接收 ajax 的多种类型的参数 前瑞jquery 和ajax
+
+4.如何学习  如何查找jsp  127:8080/xx.jsp
+
+
+5. restFul 风格  是对应增删改查的   get---查 post---增加  del---删除  put---改
+        觉得 url 的传参方式 不好看 进行规范一下
+      古老的: Get 请求 https://www.biadu.com?keyWord=签哥&&newTitle=在哪住
+             Post 请求 https://www.biadu.com     formData   keyWord:签哥      newTitle:在哪住
+        以上是我们所学的 get和post 协议的请求 那么  比如查询
+        get 查询单个 get请求   https://www.biadu.com?findId=2713   根据 id查询对象
+             restFul  ----> https://www.biadu.com/2713
+
+                        http://localhost:8080/pages/login
+                        http://localhost:8080/pages/loginForm
+                        http://localhost:8080/pages/reg         总结出来 只有后面的 字符串在变
+        post 没有变
+        del  删除 查询单个 del请求  restFul  ----> https://www.biadu.com/2713  根据id 删除对象
+             restFul  ----> https://www.biadu.com/2713
+        put  没有变
